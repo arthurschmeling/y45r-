@@ -249,51 +249,53 @@ body {
   80% { opacity: 1; transform: scale(1); }
   100% { opacity: 1; transform: scale(1); }
 }
-@media (max-width: 600px) {}
-  body {
-    padding: 8px !important;
-    font-size: 1rem !important;
-  }
-  #lixos-container {
-    flex-direction: column !important;
-    gap: 12px !important;
-    max-width: 98vw !important;
-    min-height: 80px !important;
-  }
-  .lixo {
-    width: 70px !important;
-    height: 70px !important;
-    font-size: 0.7rem !important;
-    margin: 8px auto !important;
-    max-width: 70px !important;
-  }
-  .lixeiras {
-    flex-direction: column !important;
-    gap: 18px !important;
-    margin-top: 18px !important;
-    align-items: center !important;
-  }
-  .lixeira {
-    width: 90px !important;
-    margin-bottom: 12px !important;
-  }
-  .lixeira-label {
-    font-size: 0.9rem !important;
-    padding: 2px 6px !important;
-    margin-top: 4px !important;
-  }
-  .pontuacao-box, .vidas-box {
-    font-size: 1.2rem !important;
-    padding: 8px 16px !important;
-    top: 10px !important;
-    right: 10px !important;
-    left: 10px !important;
-  }
-  #botao-fase {
-    font-size: 1.3rem !important;
-    padding: 18px 32px !important;
-  }
-  .golden-message {
-    font-size: 1.3rem !important;
-    padding: 12px !important;
-  }
+@media (max-width: 768px) {
+    .header-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-navacao {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}
+@media (max-width: 480px) {
+    .lixo {
+        width: 80px;
+        height: 80px;
+        font-size: 0.7rem; /* Ajusta o tamanho do texto */
+    }
+
+    .lixeira {
+        width: 100px;
+    }
+
+    .pontuacao-box {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+        top: 10px;
+        right: 10px;
+        margin-bottom: 60px;
+    }
+    .vidas-box {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+        top: 80px;
+        left: 10px;
+        margin-bottom: 60px;
+    }
+    h1, .titulo {
+        margin-top: 100px !important;
+        margin-bottom: 30px !important;
+    }
+
+    #botao-fase {
+        padding: 20px 40px;
+        font-size: 1.8rem;
+        pointer-events: auto;
+    }
+    .golden-message {
+        pointer-events: none;
+    }
+}
